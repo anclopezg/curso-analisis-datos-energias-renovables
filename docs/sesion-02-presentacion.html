@@ -34,11 +34,9 @@ aside{display:none}
 <div id="nt"></div>
 <div id="bar"><button id="pv">◀</button><span id="ct"></span><button id="nx">▶</button><button id="fs">Pantalla completa (F)</button><a href="index.html" style="color:#E0B84D">Volver al curso</a></div>
 <script>
-var S=[].slice.call(document.querySelectorAll('#st section')),i=0,notesWin=null;
+var S=[].slice.call(document.querySelectorAll('#st section')),i=0;
 function fit(){var k=Math.min(innerWidth/1920,(innerHeight-44)/1080);var st=document.getElementById('st');st.style.transform='translate(-50%,-50%) scale('+k+')';st.style.top=((innerHeight-44)/2)+'px'}
-function updateNotes(){if(!notesWin||notesWin.closed)return;var a=S[i].querySelector('aside');var d=notesWin.document;d.getElementById('txt').textContent=a?a.textContent:'(sin notas para esta diapositiva)';d.getElementById('ctr').textContent=(i+1)+' / '+S.length;d.title='Notas del orador \u00b7 '+(i+1)+' / '+S.length}
-function openNotes(){if(notesWin&&!notesWin.closed){notesWin.focus();return}notesWin=window.open('','notas_orador','width=640,height=520');var d=notesWin.document;d.write('<!doctype html><html><head><meta charset="utf-8"><title>Notas del orador</title><style>body{margin:0;background:#1A1A1A;color:#FAF5E6;font-family:\'Patrick Hand\',sans-serif;padding:28px;font-size:24px;line-height:1.5}#ctr{position:fixed;top:10px;right:18px;font-size:16px;color:#E0B84D}</style></head><body><div id="ctr"></div><div id="txt"></div></body></html>');d.close();updateNotes()}
-function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,j){s.classList.toggle('on',j==i)});document.getElementById('ct').textContent=(i+1)+' / '+S.length;location.hash=i+1;updateNotes()}
+function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,j){s.classList.toggle('on',j==i)});document.getElementById('ct').textContent=(i+1)+' / '+S.length;location.hash=i+1}
 document.getElementById('pv').onclick=function(){show(i-1)};document.getElementById('nx').onclick=function(){show(i+1)};
 document.getElementById('fs').onclick=function(){document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()};
 addEventListener('keydown',function(e){if(e.key=='ArrowRight'||e.key==' '||e.key=='PageDown')show(i+1);else if(e.key=='ArrowLeft'||e.key=='PageUp')show(i-1);else if(e.key=='f'||e.key=='F')document.getElementById('fs').click()});
