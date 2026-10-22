@@ -1,24 +1,11 @@
 CURSO: Uso de IA para el análisis descriptivo y predictivo en energías renovables
+Material del estudiante
 
 COMO USAR ESTA CARPETA
-1. Descomprima y mantenga TODOS los archivos en la misma carpeta.
-2. Abra index.html: es la página del curso. Cada botón de sesión abre su
-   presentación local (sesion-NN-presentacion.html).
-3. En la presentación: flechas o espacio para avanzar, N = guion del orador,
-   F = pantalla completa. Requiere internet solo para fuentes y códigos QR.
-4. Los notebooks (.ipynb) se abren en Google Colab o Jupyter.
-5. GUIONES-las-10-sesiones.docx contiene lo que debe decir en cada sesión.
-
-PRESENTACIONES ONLINE (alternativa, privadas hasta que las comparta)
-S1 https://claude.ai/artifact/Eo6y8ePRPA5Vzjut1WV7LR
-S2 https://claude.ai/artifact/WdksQayMUUhMyb6aMjMXAE
-S3 https://claude.ai/artifact/KMDo7NJQRgWK1RvVsRTGAS
-S4 https://claude.ai/artifact/PiUdoYbrC2AkWdLCqULret
-S5 https://claude.ai/artifact/GkTFpNfXf3itw9UyDEnWM6
-S6 https://claude.ai/artifact/Bvtapsi1SbJRbUhTM6Xw6f
-S7 https://claude.ai/artifact/1LZBTo8764WRoyna5DPRmC
-S8 https://claude.ai/artifact/Hv9z9stF1RgUz3Mk3Kkuyv
-S9 https://claude.ai/artifact/8jVaD2B4fNEdZqfsu4HDVu
-S10 https://claude.ai/artifact/A37AwCJaqMYrwAQYae8HW4
-Cuestionario: https://claude.ai/artifact/7VrNSECnaAWqJKG7tCv3dn
-Página del curso: https://claude.ai/artifact/FJuEhwVBXYeseyuvnYUWVw
+1. Mantenga todos los archivos en la misma carpeta.
+2. Abra index.html: es la página del curso. Cada sesión enlaza a su
+   presentación (sesion-NN-presentacion.html) y a su notebook.
+3. En la presentación: flechas o espacio para avanzar, F = pantalla completa.
+4. Los notebooks (.ipynb) de la carpeta notebooks/ se abren en Google Colab
+   o Jupyter. Tienen celdas marcadas con "# TODO" para completar durante
+   la práctica de cada sesión.
